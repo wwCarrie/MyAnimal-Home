@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_common"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+        <!--一个是显示返回键，一个是显示标题框-->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:padding="12dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="编辑档案"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_login_input"
+        android:gravity="center_vertical"
+        android:paddingStart="23dp"
+        android:paddingEnd="23dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="品种"
+            android:textColor="@color/hint"
+            android:textSize="13sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_breed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入品种"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:textColorHint="#FFBCBCBC"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_login_input"
+        android:gravity="center_vertical"
+        android:paddingStart="23dp"
+        android:paddingEnd="23dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:textColor="@color/hint"
+            android:textSize="13sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_nickname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入昵称"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:textColorHint="#FFBCBCBC"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_login_input"
+        android:gravity="center_vertical"
+        android:paddingStart="23dp"
+        android:paddingEnd="23dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="生日"
+            android:textColor="@color/hint"
+            android:textSize="13sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_birthday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入生日"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:textColorHint="#FFBCBCBC"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_login_input"
+        android:gravity="center_vertical"
+        android:paddingStart="23dp"
+        android:paddingEnd="23dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="性格"
+            android:textColor="@color/hint"
+            android:textSize="13sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_character"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入性格"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:textColorHint="#FFBCBCBC"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_login_input"
+        android:gravity="center_vertical"
+        android:paddingStart="23dp"
+        android:paddingEnd="23dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="技能"
+            android:textColor="@color/hint"
+            android:textSize="13sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_skill"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入技能"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:textColorHint="#FFBCBCBC"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/btn_style"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>
